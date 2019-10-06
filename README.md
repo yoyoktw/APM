@@ -1,4 +1,10 @@
 # APM
+This project is ported from [Deborah Kurata](https://github.com/DeborahK/Angular-GettingStarted) with some changes based on my learning.
+
+This project is using technologies :
+1. Angular
+2. Bootstrap
+3. [FAKE Rest Server](https://github.com/typicode/json-server)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
 
