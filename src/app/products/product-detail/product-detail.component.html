@@ -1,0 +1,56 @@
+<div class="card" *ngIf="product">
+  <div class="card-header">
+    {{pageTitle + ': ' + product?.productName}}
+  </div>
+  <div class="container">
+    <form>
+      <div class="form-group row">
+        <label for="productId" class="col-sm-2 col-form-label">Id</label>
+        <div class="col-sm-10">
+          <input value="{{product.productId}}" type="text" readonly class="form-control-plaintext" id="productId">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="productName" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+          <input value="{{product.productName}}" type="text" class="form-control" id="productName" placeholder="Name">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="productCode" class="col-sm-2 col-form-label">Code</label>
+        <div class="col-sm-10">
+          <input value="{{product.productCode}}" type="text" class="form-control" id="productCode" placeholder="Code">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="releaseDate" class="col-sm-2 col-form-label">Release Date</label>
+        <div class="col-sm-10">
+          <input value="{{product.releaseDate}}" type="text" class="form-control" id="releaseDate" placeholder="Release Date">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="description" class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-10">
+          <input value="{{product.description}}" type="text" class="form-control" id="description" placeholder="Description">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="price" class="col-sm-2 col-form-label">Price</label>
+        <div class="col-sm-10">
+          <input value="{{product.price}}" type="text" class="form-control" id="price" placeholder="Price">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="starRating" class="col-sm-2 col-form-label">Rating</label>
+        <div class="col-sm-10">
+          <input value="{{product.starRating}}" type="text" class="form-control" id="starRating" placeholder="Rating">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-outline-secondary" (click)="onBack()" style="width: 80px">
+      <i class="fa fa-chevron-left"></i> Back
+    </button>
+  </div>
+</div>
